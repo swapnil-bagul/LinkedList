@@ -28,16 +28,18 @@ namespace LinkedList
             Console.WriteLine("{0} inserted into linkedlist", node.data);
         }
 
-        // Remove First Element
-        public void RemoveFirst()  
+        // Remove Last Element
+        public void RemoveLast()  
         {
-            if (this.head == null)
+            Node new_node = this.head; 
+
+            //Checking Last Element is Null Using While loop
+            while (new_node.next.next != null)  
             {
-                Console.WriteLine("List is Empty");
+                new_node = new_node.next; 
             }
-            //here head is shifting
-            this.head = this.head.next; 
-            
+            new_node.next = null;
+
         }
 
 

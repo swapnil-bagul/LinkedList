@@ -17,7 +17,7 @@ namespace LinkedList
             list.Display();
 
             //Removing Element
-            list.RemoveFirst();
+            list.RemoveLast();
 
             // Displaying linkedlist
             list.Display();
