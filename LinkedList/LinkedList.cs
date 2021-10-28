@@ -28,17 +28,20 @@ namespace LinkedList
             Console.WriteLine("{0} inserted into linkedlist", node.data);
         }
 
-        // Remove Last Element
-        public void RemoveLast()  
+        // Search Element in List
+        public void SearchElement(int data) 
         {
-            Node new_node = this.head; 
-
-            //Checking Last Element is Null Using While loop
-            while (new_node.next.next != null)  
+            
+            while (this.head != null)
             {
-                new_node = new_node.next; 
+                if (this.head.data == data)
+                {
+                    Console.WriteLine("Element is Found");
+                }
+                //Incrementation Of Head
+                this.head = this.head.next;
+                
             }
-            new_node.next = null;
 
         }
 

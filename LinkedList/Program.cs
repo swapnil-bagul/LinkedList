@@ -16,11 +16,8 @@ namespace LinkedList
             list.Add(70);
             list.Display();
 
-            //Removing Element
-            list.RemoveLast();
-
-            // Displaying linkedlist
-            list.Display();
+            //Serching Element
+            list.SearchElement(30);
           
         }
     }
