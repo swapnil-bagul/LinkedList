@@ -16,9 +16,13 @@ namespace LinkedList
             list.Add(70);
             list.Display();
 
-            //Serching Element
-            list.SearchElement(30);
-          
+            // Searching & Inserting Element 
+            list.InsertElement(30, 40);
+
+            //Displaying Element
+            list.Display();
+
+
         }
     }
 }

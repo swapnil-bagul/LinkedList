@@ -8,7 +8,7 @@ namespace LinkedList
     {
         // Create head reference variable
         internal Node head;
-
+       
         public void Add(int data)
         {
             Node node = new Node(data);
@@ -28,23 +28,26 @@ namespace LinkedList
             Console.WriteLine("{0} inserted into linkedlist", node.data);
         }
 
-        // Search Element in List
-        public void SearchElement(int data) 
+        //Inserting Element
+        public void InsertElement(int data,int element)
         {
-            
-            while (this.head != null)
+            Node temp = this.head;
+            Node newNode = new Node(element);
+
+            while (temp != null)
             {
-                if (this.head.data == data)
+                if (temp.data == data) // Finding Element
                 {
-                    Console.WriteLine("Element is Found");
+                    Console.WriteLine("{0} Element Is Found & {1} Is Inserted In LinkedList",30,40);
+
+                    Node temp1 = temp.next; //Inserting new Element
+                    temp.next = newNode;
+                    newNode.next = temp1;
+                    break;
                 }
-                //Incrementation Of Head
-                this.head = this.head.next;
-                
+                temp = temp.next;
             }
-
         }
-
 
         //Displaying List
         public void Display ()
