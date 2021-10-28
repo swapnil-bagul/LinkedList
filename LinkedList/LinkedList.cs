@@ -8,27 +8,40 @@ namespace LinkedList
     {
         // Create head reference variable
         internal Node head;
-        public void Append(int data)
+
+        public void Add(int data)
         {
-            //Create Object new_node of Node Class
-            Node new_node = new Node(data); 
+            Node node = new Node(data);
             if (this.head == null)
             {
-                this.head = new_node;
+                this.head = node;
             }
             else
             {
-                //assign head to temp reference variable
                 Node temp = head;
-                while (temp.next !=null)
+                while (temp.next != null)
                 {
                     temp = temp.next;
                 }
-                temp.next = new_node;
+                temp.next = node;
             }
-            Console.WriteLine("{0} inserted into linkedlist", new_node.data);
+            Console.WriteLine("{0} inserted into linkedlist", node.data);
         }
 
+        //Insert Element Between Two Element
+        public void InsertBetween(Node beforeElement ,int data )
+        {
+            beforeElement = this.head;
+
+            // Create Object 
+            Node new_node = new Node(data);
+            new_node.next = beforeElement.next;
+            beforeElement.next = new_node;
+
+            Console.WriteLine("{0} inserted into linkedlist", new_node .data);
+        }
+
+        //Displaying List
         public void Display ()
         {
             Node temp = this.head;
