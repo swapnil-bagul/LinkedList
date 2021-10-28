@@ -11,12 +11,13 @@ namespace LinkedList
             LinkedList list = new LinkedList();
 
             //Adding element
-            list.Add(56); 
+            list.Add(56);
+            list.Add(30);
             list.Add(70);
             list.Display();
 
-            //inserting Element
-            list.InsertBetween(list.head.next ,30);
+            //Removing Element
+            list.RemoveFirst();
 
             // Displaying linkedlist
             list.Display();
