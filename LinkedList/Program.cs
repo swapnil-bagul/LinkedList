@@ -7,14 +7,17 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
+            //create object
             LinkedList list = new LinkedList();
-            list.Add(56);
-            list.Add(30);
-            list.Add(70);
-            list.Display();
-
+            //adding element using InsertFirst() method
             
-
+            list.InsertFirst(70); 
+            list.InsertFirst(30);
+            list.InsertFirst(56);
+          
+            // Displaying linkedlist
+            list.Display();
+          
         }
     }
 }
