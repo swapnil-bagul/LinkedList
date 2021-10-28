@@ -9,12 +9,15 @@ namespace LinkedList
         {
             //create object
             LinkedList list = new LinkedList();
-            //adding element using InsertFirst() method
-            
-            list.Append(56); 
-            list.Append(30);
-            list.Append(70);
-          
+
+            //Adding element
+            list.Add(56); 
+            list.Add(70);
+            list.Display();
+
+            //inserting Element
+            list.InsertBetween(list.head.next ,30);
+
             // Displaying linkedlist
             list.Display();
           
