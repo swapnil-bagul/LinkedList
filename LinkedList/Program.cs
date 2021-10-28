@@ -22,6 +22,10 @@ namespace LinkedList
             //Displaying Element
             list.Display();
 
+            //size of Linkedlist
+            list.SizeOfLinkedList();
+
+
 
         }
     }

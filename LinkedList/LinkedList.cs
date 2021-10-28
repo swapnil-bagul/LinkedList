@@ -66,5 +66,21 @@ namespace LinkedList
                 temp = temp.next;
             }
         }
+
+        //Size of LinkedList
+        public void SizeOfLinkedList()
+        {
+            Node temp = this.head;
+            int size = 0;
+            while (temp != null)
+            {
+                
+                size++;
+                temp = temp.next;
+
+            }
+
+            Console.WriteLine("Size of LinkedList Is: "+size);
+        }
     }
 }
