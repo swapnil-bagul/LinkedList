@@ -28,22 +28,24 @@ namespace LinkedList
             Console.WriteLine("{0} inserted into linkedlist", node.data);
         }
 
-        //Insert Element Between Two Element
-        public void InsertBetween(Node beforeElement ,int data )
+        // Remove First Element
+        public void RemoveFirst()  
         {
-            beforeElement = this.head;
-
-            // Create Object 
-            Node new_node = new Node(data);
-            new_node.next = beforeElement.next;
-            beforeElement.next = new_node;
-
-            Console.WriteLine("{0} inserted into linkedlist", new_node .data);
+            if (this.head == null)
+            {
+                Console.WriteLine("List is Empty");
+            }
+            //here head is shifting
+            this.head = this.head.next; 
+            
         }
+
 
         //Displaying List
         public void Display ()
         {
+            Console.WriteLine("LinkedList Element");
+
             Node temp = this.head;
             if(temp == null)
             {
