@@ -8,7 +8,7 @@ namespace LinkedList
     {
         // Create head reference variable
         internal Node head;
-        public void Add(int data)
+        public void Append(int data)
         {
             //Create Object new_node of Node Class
             Node new_node = new Node(data); 
@@ -29,19 +29,6 @@ namespace LinkedList
             Console.WriteLine("{0} inserted into linkedlist", new_node.data);
         }
 
-        //UC2
-        //Added element 70-30-56
-        //sequence is 56-70-30
-        public void InsertFirst(int data)
-        {
-            //Create Object new_node of Node Class
-            Node new_node = new Node(data);
-
-            new_node.next = this.head;
-            this.head = new_node;
-            Console.WriteLine("inserted into linkedlist" + new_node.data);
-
-        }
         public void Display ()
         {
             Node temp = this.head;

@@ -9,6 +9,7 @@ namespace LinkedList
         public int data;
         public Node next;
 
+        //Node Constructor
         public Node (int data)
         {
             this.data = data;

@@ -11,9 +11,9 @@ namespace LinkedList
             LinkedList list = new LinkedList();
             //adding element using InsertFirst() method
             
-            list.InsertFirst(70); 
-            list.InsertFirst(30);
-            list.InsertFirst(56);
+            list.Append(56); 
+            list.Append(30);
+            list.Append(70);
           
             // Displaying linkedlist
             list.Display();
