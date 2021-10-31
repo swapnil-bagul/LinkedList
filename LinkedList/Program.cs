@@ -8,20 +8,13 @@ namespace LinkedList
         static void Main(string[] args)
         {
             //create object
-            LinkedList list = new LinkedList();
+            LinkedListStack linkedListStack = new LinkedListStack();
 
             //Adding element
-            list.Add(56);
-            list.Add(30);
-            list.Add(70);
-            list.Display();
-
-            // Searching & Inserting Element 
-            list.InsertElement(30, 40);
-
-            //Displaying Element
-            list.Display();
-
+            linkedListStack.Push(70);
+            linkedListStack.Push(30);
+            linkedListStack.Push(56);
+            linkedListStack.Display();
 
         }
     }
