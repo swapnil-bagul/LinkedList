@@ -11,6 +11,7 @@ namespace LinkedList
             LinkedListStack linkedListStack = new LinkedListStack();
 
             //Adding element
+
             linkedListStack.Push(70);
             linkedListStack.Push(30);
             linkedListStack.Push(56);
