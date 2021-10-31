@@ -17,6 +17,10 @@ namespace LinkedList
             linkedListStack.Push(56);
             linkedListStack.Display();
 
+            //Peek and Pop till Stack is empty
+            linkedListStack.IsEmpty ();
+            linkedListStack.Display();
+
         }
     }
 }

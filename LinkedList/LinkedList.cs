@@ -30,6 +30,41 @@ namespace LinkedList
             Console.WriteLine("{0} pushed to stack", data);
         }
 
+        //Peak Top Element
+        public void Peek()
+        {
+            if (this.top==null)
+            {
+                Console.WriteLine("Stack is empty");
+            }
+            Console.WriteLine("The Top Element in stack is ", this.top.data);
+
+        }
+
+        //Delete Top Element
+        public void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is empty, Deletation is not Posssible");
+            }
+            Console.WriteLine("{0} is Poped",this.top.data );
+            //decrementation of top
+            this.top= this.top.next;
+
+        }
+
+        //Pop From stack till empty
+        public void IsEmpty()
+        {
+            while (this.top!=null)
+            {
+                Peek();
+                Pop();
+            }
+        }
+
+
         //Displaying List
         public void Display()
         {
